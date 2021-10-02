@@ -1,17 +1,17 @@
 #include<stdio.h>  
  int main()    
 {    
-int n,r,sum=0,temp;    
+int number,remainder,sum=0,tempnumber;    
 printf("enter the number=");    
-scanf("%d",&n);    
-temp=n;    
-while(n>0)    
+scanf("%d",&number);    
+tempnumber=n;    
+while(number>0)    
 {    
-r=n%10;    
-sum=sum+(r*r*r);    
+remainder=number%10;    
+sum=sum+(remainder*remainder*remainder);    
 n=n/10;    
 }    
-if(temp==sum)    
+if(tempnumber==sum)    
 printf("armstrong  number ");    
 else    
 printf("not armstrong number");    
